@@ -1,0 +1,151 @@
+main {
+    padding: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MAIN CONTENT */
+
+main .main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+main .main-content2 {
+    display: flex;
+    flex-direction: column;
+}
+main .main-content h2 {
+    margin-bottom: 2%;
+    font-size: 2.2em;
+}
+
+main .main-content .text {
+    margin-bottom: 10%;
+}
+
+main .main-content .text p {
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+/* CARDS */
+
+main .techs .cards-container {
+    display: flex;
+    align-items: center;
+}
+main .techs {
+    margin-bottom: 10%;
+}
+main .techs .cards-container .card {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 0.9em;
+    margin-left: 0.9em;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .techs .cards-container .card img {
+    width: 80%;
+}
+
+main .techs .cards-container .card:hover {
+    box-shadow: 0px 0px 25px cornflowerblue;
+}
+
+/* FIGURE */
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main figure img {
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+
+    margin-bottom: 6%;
+    border: 2px cornflowerblue solid;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+main figure img:hover {
+    box-shadow: 0px 0px 25px cornflowerblue;
+}
+
+main figure figcaption {
+    font-weight: 600;
+    align-items: center; 
+}
+
+/* BUTTONS */
+
+.main-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.circle {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+.circle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  
+#info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+#info-box.active {
+    opacity: 1;
+}
+  
+#back-btn {
+    margin-bottom: 10px;
+}
